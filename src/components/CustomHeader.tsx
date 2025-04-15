@@ -17,7 +17,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({ title, back }) => {
   return (
     <View style={styles.headerContainer}>
         {back && <TouchableOpacity onPress={handleBackPress}>
-            <Icon name={'arrow-back-ios'}  />
+            <Icon name={'arrow-back-ios'} color={'#000000'}  />
         </TouchableOpacity>}
         <Text style={styles.title}>{title}</Text>
     </View>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#000000',
   },
 });
 
